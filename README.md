@@ -45,4 +45,25 @@ Built a functional and styled Login Page for the frontend.
 Set up dedicated folders for organizing backend code effectively.
 Initialized and configured a Node.js server to handle API requests.
 Connected the application to MongoDB to store and manage data.
-Implemented basic error handling to ensure smooth server operation.
+Implemented basic error handling to ensure smooth server operation.\
+
+
+## MILESTONE4 :-
+1. Create a User Model
+Designed and implemented a User Model that serves as a blueprint for how user data is structured and stored in the database. This model defines the user schema and the fields that are needed for user-related data.
+2. Create a User Controller
+Developed a User Controller that handles the logic related to user data. It manages tasks such as adding a new user, retrieving user information, and other user-related operations.
+3. Enable and Configure Multer for File Uploads
+Configured Multer to handle file uploads in the application. This allows users to upload files (like images) which will be stored appropriately in the system. Multer is set up to handle storage configurations and file validation.
+
+
+---
+## MILESTONE5 :-
+1. Created a Sign-Up Page in React.
+2. Implemented form validation for:
+      Name (required)
+      Email (valid format required)
+      Password (minimum 2 characters)
+      Password Confirmation (must match password)
+
+4. Used React Router for navigation.
