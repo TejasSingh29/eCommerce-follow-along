@@ -31,16 +31,16 @@ const storage = multer.diskStorage({
 
 // Multer storage configuration for product images
 const pstorage = multer.diskStorage({
-  // destination: function (req, file, cb) {
-  //   cb(null, productsDir);
-  // },
+  destination: function (req, file, cb) {
+    cb(null, productsDir);
+  },
   destination: "products/",
   filename: function (req, file, cb) {
     console.log(req.body);
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
-    // const ext = path.extname(file.originalname);
-    // const filename = path.basename(file.originalname, ext);
-    const filename = file.originalname.split(".")[0];
+    const ext = path.extname(file.originalname);
+    const filename = path.basename(file.originalname, ext);
+    // const filename = file.originalname.split(".")[0];
     cb(null, filename + "-" + uniqueSuffix + ".png");
   },
 });

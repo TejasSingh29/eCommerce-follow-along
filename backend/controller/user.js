@@ -67,31 +67,6 @@ router.post(
           })
         );
         
-        router.post(
-          "/login",
-          catchAsyncErrors(async (req, res, next) => {
-            console.log("Logging in user...");
-            const { email, password } = req.body;
-            if (!email || !password) {
-              return next(new ErrorHandler("Please provide email and password", 400));
-            }
-            const user = await User.findOne({ email }).select("+password");
-            if (!user) {
-              return next(new ErrorHandler("Invalid Email or Password", 401));
-            }
-            const isPasswordMatched = await bcrypt.compare(password, user.password);
-            console.log("At Auth", "Password: ", password, "Hash: ", user.password);
-            if (!isPasswordMatched) {
-              return next(new ErrorHandler("Invalid Email or Password", 401));
-            }
-            user.password = undefined;
-            res.status(200).json({
-              success: true,
-              user,
-            });
-          })
-        );
-        
         router.get(
           "/profile",
           catchAsyncErrors(async (req, res, next) => {

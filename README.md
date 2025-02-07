@@ -135,3 +135,9 @@ Validated the password using bcrypt.
 Compared the entered password with the stored hashed password for authentication.
 Generated a JWT token upon successful login for authentication.
 Implemented error handling for invalid credentials and server errors.
+
+
+## Milestone 12: 
+MyProductWe are filtering our myproducts 
+Create get request 
+Add the endpoint

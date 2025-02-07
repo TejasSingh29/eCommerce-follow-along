@@ -16,10 +16,7 @@ app.use(cookieParser());
 
 // Configure CORS to allow requests from React frontend
 app.use(
-  cors({
-    origin: "http://localhost:5174", // Update this if your frontend is hosted elsewhere
-    credentials: true, // Enable if you need to send cookies or authentication headers
-  })
+  cors()
 );
 
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));

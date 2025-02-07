@@ -1,5 +1,5 @@
 import { BrowserRouter , Routes , Route} from "react-router-dom";
-import { LoginPage,SignupPage,CreateProduct,Home} from "./Routes.jsx";
+import { LoginPage,SignupPage,CreateProduct,Home,MyProducts} from "./Routes.jsx";
 import './App.css' ;
 
 function App (){
@@ -11,6 +11,7 @@ function App (){
       <Route path="/signup" element={<SignupPage />} />
    
       <Route path="/create-product" element={<CreateProduct />} />
+      <Route path="/my-products" element={<MyProducts />} />
       
     </Routes>
     </BrowserRouter>
