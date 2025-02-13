@@ -14,12 +14,11 @@ useEffect(() => {
       return res.json();
     })
     .then((data) => {
-      console.log(data,"17")
       setProducts(data.products);
       setLoading(false);
     })
     .catch((err) => {
-      console.error("❌ Error fetching products:", err);
+      console.error("Error fetching products:", err);
       setError(err.message);
       setLoading(false);
     });
