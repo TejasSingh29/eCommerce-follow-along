@@ -339,7 +339,7 @@ By the end of this milestone, you will learn:
 
 ## Steps for Milestone 15 📝
 
-### 1️⃣ Create a New `Nav` Component
+### 1  Create a New `Nav` Component
 - The Navbar should include links to the following pages:
   - **Home**
   - **My Products**
@@ -347,11 +347,11 @@ By the end of this milestone, you will learn:
   - **Cart**
 - Ensure the Navbar is responsive and adapts to different screen sizes.
 
-### 2️⃣ Add Navbar to All Pages
+### 2 Add Navbar to All Pages
 - Import and integrate the `Nav` component into all pages.
 - Ensure smooth navigation between different sections of the application.
 
-### 3️⃣ Make the Navigation Smooth & User-Friendly
+### 3 Make the Navigation Smooth & User-Friendly
 - Use **React Router** for handling navigation.
 - Implement active link highlighting for better UX.
 - Optimize the layout to be mobile-friendly.
@@ -369,15 +369,15 @@ By the end of this milestone, you will learn:
 
 ## Steps for Milestone 16 📝
 
-### 1️⃣ Create a New Product Info Page
+### 1 Create a New Product Info Page
 - The page should display detailed information about a product.
 - Include product **name, image, price, and description**.
 
-### 2️⃣ Add a Quantity Selector
+### 2 Add a Quantity Selector
 - Allow users to select the desired quantity of the product.
 - Ensure the quantity selection updates dynamically.
 
-### 3️⃣ Implement the Add to Cart Button
+### 3 Implement the Add to Cart Button
 - Add a button that allows users to add the selected quantity of the product to their cart.
 - Ensure smooth user interaction and feedback after adding to cart.
 

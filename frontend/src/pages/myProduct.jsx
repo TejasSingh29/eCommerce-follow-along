@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import Myproduct from "../components/auth/myproduct";
-import NavBar from "../components/auth/nav";
+import Myproduct from "../component/auth/myProduct";
+import NavBar from "../component/auth/nav";
 
 export default function MyProducts() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const email = "valid@example.com";
+    const email = "vali1232@gmail.com";
 
     useEffect(() => {
         fetch(`http://localhost:8000/api/v2/product/my-products?email=${email}`)
