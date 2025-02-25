@@ -383,3 +383,52 @@ By the end of this milestone, you will learn:
 
 
 ---
+
+## Steps for Milestone 17📝
+## 1. Write the cart schema to store products
+
+## 2. Write an endpoint to store receive and store product details in cart
+
+
+
+## Steps for Milestone 18📝
+
+1.Create an Backend endpoint for cart page
+
+ 2.Write and endpoint to get products inside cart for user
+
+
+
+
+## Steps for Milestone 19📝
+
+1. create cart frontend page and display the products
+
+ 2. For each product add an option to increase and decrease quantity using + and - buttons.
+
+ 3.Create an Backend endpoint for increase and decrease quantity
+
+ 
+ ## Steps for Milestone 20📝
+1. Create an Backend endpoint that will sent user data
+
+2. create frontend profile page
+
+3. display profile photo, name and email in one section
+
+4. In another section display address and add an button called "Add address"
+
+5. If there are no address display "No address found"
+
+
+
+## Steps for MIlestone 21 
+ 1. Create an frontend form that will will take address.
+
+ 2. Take country, city, address1, address2, zip code, address type.
+
+
+ Steps for Milestone 22📝
+
+## 1. You need to create an endpoint that will receive the address from address form in frontend
+## 2. Add the address to the address array inside user collection.
