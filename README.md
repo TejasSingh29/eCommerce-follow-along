@@ -428,10 +428,10 @@ By the end of this milestone, you will learn:
  2. Take country, city, address1, address2, zip code, address type.
 
 
- Steps for Milestone 22📝
+ ## Steps for Milestone 22📝
 
-## 1. You need to create an endpoint that will receive the address from address form in frontend
-## 2. Add the address to the address array inside user collection.
+ 1. You need to create an endpoint that will receive the address from address form in frontend
+ 2. Add the address to the address array inside user collection.
 
 
 
@@ -439,3 +439,9 @@ By the end of this milestone, you will learn:
 1.Create an placeorder button inside cart page and navigate to select address page when clicked.
 2.Create and select address page that will display all the available address and have an option to select one address.
 3.Write an backend endpoint that will send all the addresses of the user.
+
+## Steps for Milestone 24📝
+1.First we will display all the products we are ordering.
+2.Next we will display the address user selected to deliver.
+3.We will display the total value of the cart.
+4.We will have an place order button at the bottom.
