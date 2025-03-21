@@ -451,3 +451,9 @@ You need to create an endpoint that will receive the products, user, address det
 You will get the mail of the user using that you need to retrive the _id of the user
 For each product the order will be different with same address
 using order schema you created earlier you will store order details in mongodb order collection
+
+## Steps for Milestone 26📝
+You need to create an endpoint that will receive the user mail
+You will get the mail of the user using that you need to retrive the _id of the user
+Using that _id you need to get all the orders of that user
+Send all the users orders in the response.
