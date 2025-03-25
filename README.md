@@ -470,3 +470,17 @@ In my-orders page for every order add cancel order button
 If the order is already canceled this button should not be displayed
 You need to create an endpoint that will receive the order-id
 Get the order using this id and mark the status canceled and save
+
+## Steps for Milestone 29📝
+Please create an PayPal account first PayPal developer dashboard
+Once you login you can see an option for an sandbox accounts.
+Copy the UserID of that account and save it.
+In this sandbox accounts you can find your client id copy and save it.
+In your order conformation page you need two options for payment one is COD and another is online payment.
+Create radio buttons to select COD or online payment and when we click on online payment PayPal buttons need to be displayed.
+In next milestone we will write an code to display and use those PayPal online Payments buttons.
+
+## Steps for Milestone 30📝
+After creating PayPal account and getting the UserID inside sandbox account.
+Implement online payment using PayPal API using the client key you created earlier.
+Download NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..
