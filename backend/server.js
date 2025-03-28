@@ -1,5 +1,13 @@
 const app = require("./app");
 const connectDatabase = require("./db/Database");
+const cors = require('cors');
+
+
+app.use(cors({
+  origin: ['http://localhost:5173','http://localhost:5178'], // Allow frontend origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+  credentials: true // If using cookies/auth
+}));
 
 // Handling uncaught Exception when setting up backend server
 process.on("uncaughtException", (err) => {
