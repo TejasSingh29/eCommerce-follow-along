@@ -5,8 +5,7 @@ import { RxAvatar } from "react-icons/rx";
 import axios from "axios";
 import ValidationFormObject from "../../validation";
 import { useDispatch } from 'react-redux';
-import { setemail } from "../../store/userActions";
-
+ import { setemail } from "../../store/userActions";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -24,9 +23,9 @@ const Signup = () => {
     }
   };
   const validateFields = () => {
-    const nameError = ValidationFormObject.validateName(name);
-    const emailError = ValidationFormObject.validateEmail(email);
-    const passwordError = ValidationFormObject.validatePass(password);
+    const nameError = ValidationFormObject.validteName(name);
+    const emailError = ValidationFormObject.validteEmail(email);
+    const passwordError = ValidationFormObject.validtePass(password);
     const newErrors = {};
     if (nameError !== true) newErrors.name = nameError;
     if (emailError !== true) newErrors.email = emailError;
