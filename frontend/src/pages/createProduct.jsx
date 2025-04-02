@@ -74,13 +74,13 @@ const CreateProduct = () => {
 
         try {
           if (isEdit) {
-            const response = await axios.put(`/api/v2/product/update-product/${id}`,formData);
+            const response = await axios.put(`http://localhost:8000/api/v2/product/update-product/${id}`,formData);
             if (response.status === 200) {
                 alert("Product updated successfully!");
                 navigate("/my-products");
             }
         } else {
-            const response = await axios.post("/api/v2/product/create-product", formData);
+            const response = await axios.post("http://localhost:8000/api/v2/product/create-product", formData);
             if (response.status === 201) {
                 alert("Product created successfully!");
                 setImages([]);

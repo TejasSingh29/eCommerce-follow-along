@@ -18,7 +18,7 @@ export default function ProductDetails() {
 	useEffect(() => {
 		const fetchProduct = async () => {
 			try {
-				const response = await axios.get(`/api/v2/product/product/${id}`);
+				const response = await axios.get(`http://localhost:8000/api/v2/product/product/${id}`);
 				console.log("Fetched product:", response.data.product);
 				setProduct(response.data.product); // Ensure correct state setting
 				setLoading(false);
@@ -51,7 +51,7 @@ export default function ProductDetails() {
 			return;
 		}
 		try {
-			const response = await axios.post("/api/v2/product/cart",
+			const response = await axios.post("http://localhost:8000/api/v2/product/cart",
 				{
 					userId: email,
 					productId: id,

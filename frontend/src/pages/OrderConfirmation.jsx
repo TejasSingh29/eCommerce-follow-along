@@ -25,14 +25,14 @@ const OrderConfirmation = () => {
         }   
         const fetchData = async () => {
             try {
-                const addressResponse = await axios.get('/api/v2/user/addresses', {
+                const addressResponse = await axios.get('http://localhost:8000/api/v2/user/addresses', {
                     params: { email },
                 });
                 const address = addressResponse.data.addresses.find((a) => a._id === addressId);
                 if (!address) throw new Error('Selected address not found.');
                 setSelectedAddress(address);
 
-                const cartResponse = await axios.get('/api/v2/product/cartproducts', {
+                const cartResponse = await axios.get('http://localhost:8000/api/v2/product/cartproducts', {
                     params: { email },
                 });
                 const cartData = cartResponse.data;

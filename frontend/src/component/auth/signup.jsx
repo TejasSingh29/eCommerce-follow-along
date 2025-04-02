@@ -23,9 +23,9 @@ const Signup = () => {
     }
   };
   const validateFields = () => {
-    const nameError = ValidationFormObject.validteName(name);
-    const emailError = ValidationFormObject.validteEmail(email);
-    const passwordError = ValidationFormObject.validtePass(password);
+    const nameError = ValidationFormObject.validateName(name);
+    const emailError = ValidationFormObject.validateEmail(email);
+    const passwordError = ValidationFormObject.validatePass(password);
     const newErrors = {};
     if (nameError !== true) newErrors.name = nameError;
     if (emailError !== true) newErrors.email = emailError;

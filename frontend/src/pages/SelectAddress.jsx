@@ -15,7 +15,7 @@ const SelectAddress = () => {
     useEffect(() => {
         // Only fetch addresses if email exists
         if (!userEmail) return;
-            axios.get('/api/v2/user/addresses', { params: { email: userEmail } })
+            axios.get('http://localhost:8000/api/v2/user/addresses', { params: { email: userEmail } })
              .then((res) => {
                  if (res.data && Array.isArray(res.data.addresses)) {
                      setAddresses(res.data.addresses);

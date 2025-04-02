@@ -20,7 +20,7 @@ export default function Profile() {
 		// Only fetch profile if email exists
 		if (!email) return;
 		axios
- 			.get("/api/v2/user/profile", { params: { email } })
+ 			.get("http://localhost:8000/api/v2/user/profile", { params: { email } })
 			.then((res) => {
 				setPersonalDetails(res.data.user);
 				setAddresses(res.data.addresses);
